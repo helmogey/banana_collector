@@ -18,38 +18,27 @@ The task is episodic, and in order to solve the environment, your agent must get
 
 
 
-## Dependencies
+## Getting Started
+See the instrucions here to set up your environment [instructions here](https://github.com/udacity/deep-reinforcement-learning#dependencies) 
 
-To set up your python environment to run the code in this repository, follow the instructions below.
+It also requires [Unity ML-Agents](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation.md), [NumPy](http://www.numpy.org/) and [PyTorch](https://pytorch.org/) 
 
-1. Create (and activate) a new environment with Python 3.6.
 
-	- __Linux__ or __Mac__: 
-	```bash
-	conda create --name drlnd python=3.6
-	source activate drlnd
-	```
-	- __Windows__: 
-	```bash
-	conda create --name drlnd python=3.6 
-	activate drlnd
-	```
-	
-2. Follow the instructions in [this repository](https://github.com/openai/gym) to perform a minimal install of OpenAI gym.  
-	- Next, install the **classic control** environment group by following the instructions [here](https://github.com/openai/gym#classic-control).
+Get the environment matching your OS :
 
-	
-3. Clone the repository (if you haven't already!), and navigate to the `python/` folder.  Then, install several dependencies.
-```bash
-git clone https://github.com/udacity/deep-reinforcement-learning.git
-cd deep-reinforcement-learning/python
-pip install .
+Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
+Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
+Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
+Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
+
+
+Use full path file reference for such environment. Note that Banana.app is already included in this repo, so it can be imported with: 
+```
+env = UnityEnvironment(file_name="Banana.app")
 ```
 
-4. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `drlnd` environment.  
-```bash
-python -m ipykernel install --user --name drlnd --display-name "drlnd"
-```
+## Instructions
+Then run the [`navigation_banana.ipynb`](https://github.com/doctorcorral/DRLND-p1-banana/blob/master/navigation_banana.ipynb) notebook using the drlnd kernel to train the DQN agent.
 
-5. Before running code in a notebook, change the kernel to match the `drlnd` environment by using the drop-down `Kernel` menu. 
+After trainig the model, parameters will be dumpt to `checkpoint.pth` and will be used by the trained agent.
 

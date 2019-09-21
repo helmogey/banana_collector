@@ -13453,7 +13453,7 @@ type of state is  &lt;class &#39;numpy.ndarray&#39;&gt;
             <span class="k">break</span>
     <span class="k">return</span> <span class="n">scores</span>
 
-<span class="n">agent</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span><span class="n">state_size</span><span class="o">=</span><span class="mi">37</span><span class="p">,</span> <span class="n">action_size</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">agent</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span><span class="n">state_size</span><span class="o">=</span><span class="mi">37</span><span class="p">,</span> <span class="n">action_size</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">fc1</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span> <span class="n">fc2</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span>
 <span class="n">scores</span> <span class="o">=</span> <span class="n">dqn</span><span class="p">()</span>
 </pre></div>
 
@@ -13471,11 +13471,11 @@ type of state is  &lt;class &#39;numpy.ndarray&#39;&gt;
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Episode 100	Average Score: 0.50
-Episode 200	Average Score: 7.40
-Episode 300	Average Score: 12.64
-Episode 339	Average Score: 13.02
-Environment solved in 239 episodes!	Average Score: 13.02
+<pre>Episode 100	Average Score: 2.18
+Episode 200	Average Score: 9.97
+Episode 300	Average Score: 11.62
+Episode 398	Average Score: 13.03
+Environment solved in 298 episodes!	Average Score: 13.03
 </pre>
 </div>
 </div>

@@ -20,7 +20,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 class Agent():
     """Agent definition for interacting with environment"""
 
-    def __init__(self, state_size, action_size, seed):
+    def __init__(self, state_size, action_size, seed,fc1=64, fc2=64):
         """
         Params
         ======
@@ -32,8 +32,8 @@ class Agent():
         self.action_size = action_size
         self.seed = random.seed(seed)
 
-        self.QNet_local = QNetwork(state_size, action_size, seed).to(device)
-        self.QNet_target = QNetwork(state_size, action_size, seed).to(device)
+        self.QNet_local = QNetwork(state_size, action_size, seed,fc1=fc1, fc2=fc2).to(device)
+        self.QNet_target = QNetwork(state_size, action_size, seed,fc1=fc1, fc2=fc2).to(device)
         self.optimizer = optim.Adam(self.QNet_local.parameters(), lr=LR)
 
         self.memory = ReplayBuffer(action_size, BUFFER_SIZE, BATCH_SIZE, seed)

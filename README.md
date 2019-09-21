@@ -13,7 +13,7 @@ The state space has 37 dimensions and contains the agent's velocity, along with 
 - `0` - walk forward 
 - `1` - walk backward
 - `2` - turn left
-- `3` - turn right
+- `3` - turn right <br />
 The task is episodic, and in order to solve the environment, your agent must get an average score of +13 over 100 consecutive episodes.
 
 

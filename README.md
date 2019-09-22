@@ -1,5 +1,9 @@
 # banana_collector
 
+This is the first project in the Udacity Deep Reinforcement Learning Nanodegree.
+
+
+
 
 # The Environment
 
@@ -16,6 +20,9 @@ The state space has 37 dimensions and contains the agent's velocity, along with 
 - `3` - turn right <br />
 The task is episodic, and in order to solve the environment, your agent must get an average score of +13 over 100 consecutive episodes.
 
+
+
+To achieve this I used a deep Q-network (DQN) which is able to combine reinforcement learning with a class of artificial neural network known as deep neural networks in which several layers of nodes are used to build up progressively more abstract representations of the data and have made it possible for artificial neural networks to learn concepts such as object categories directly from raw sensory data.
 
 
 ## Getting Started

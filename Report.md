@@ -12,7 +12,7 @@ It continues episodical training via a dqn agent until `n_episodes` is reached o
 
 
 ### Neural Network
-The [QNetwork model] is 2 x 128 Fully Connected Layers with Relu activation followed by a final Fully Connected layer with the same number of units as the action size. The network has an initial dimension the same as the state size. 
+The QNetwork model is 2 x 128 Fully Connected Layers with Relu activation followed by a final Fully Connected layer with the same number of units as the action size. The network has an initial dimension the same as the state size. 
 
 
 ### Hyper Parameters  
@@ -37,6 +37,6 @@ The [QNetwork model] is 2 x 128 Fully Connected Layers with Relu activation foll
 
 
 ## Future Work
-add a convolutional layer before the fully connected layer and the input will be the frame as a picture.  
+changing the fully connected layer to be convolutional layer then fully connected layer and the input will be the frame as a picture.  
 
 

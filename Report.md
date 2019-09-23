@@ -29,7 +29,7 @@ It continues episodical training via a dqn agent until `n_episodes` is reached o
 
 ## Performance plot
 
-![Reward Plot](https://github.com/helmogey/banana_collector/new/master/plot.png?raw=true)
+(https://github.com/helmogey/banana_collector/new/master/plot.png?raw=true)
 
 
 ## Future Work
